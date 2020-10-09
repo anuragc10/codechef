@@ -1,0 +1,16 @@
+# cook your dish here
+number_of_tests = int(input())
+for _ in range(number_of_tests):
+    number_of_sticks = int(input())
+    sticks = list(map(int, input().split()))
+    
+    sticks.sort()
+    
+    operations = 0
+    last_height = -1
+    for index in range(number_of_sticks):
+        if sticks[index] != 0 and sticks[index] > last_height:
+            last_height = sticks[index]
+            operations += 1
+        
+    print(operations)
