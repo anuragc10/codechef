@@ -21,7 +21,7 @@ for _ in range(t):
                     l[i]="1"
                     l[n-i-1]="1"
             
-    if(len(l)==1):
+    if(len(l)==1 and l[0]=="?"):
         if(a==1):
             l[0]="0"
         else:
