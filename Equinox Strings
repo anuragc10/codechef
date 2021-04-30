@@ -1,0 +1,19 @@
+t=int(input())
+for _ in range(t):
+    an=0
+    bn=0
+    l=['E','Q','U','I','N','O','X']
+    n,a,b=map(int,input().split())
+    for i in range(n):
+        p=input()
+        if(p[0] in l):
+            an=an+a
+        else:
+            bn=bn+b
+    if(an==bn):
+        print('DRAW')
+    elif(an>bn):
+        print('SARTHAK')
+    else:
+        print('ANURADHA')
+    
