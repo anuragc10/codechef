@@ -1,0 +1,25 @@
+for _ in range(int(input())):
+    n,w,wr=map(int,input().split())
+    l=list(map(int,input().split()))
+    l.sort()
+    s=wr
+    i=0
+    while(i<n):
+        j=i+1
+        c=1
+        while(j<n):
+            if(l[i]!=l[j]):
+                break
+            j=j+1
+            c=c+1
+        if(c>1):
+            s=s+c*l[i]
+            if(c%2==1):
+                s=s-l[i]
+            if(s>=w):
+                break
+        i=j
+    if(s>=w):
+        print('Yes')
+    else:
+        print('No')
