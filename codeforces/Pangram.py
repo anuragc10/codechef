@@ -1,0 +1,9 @@
+n=int(input())
+s=input()
+s=s.upper()
+l=list(s)
+s1=list(set(l))
+if(len(s1)==26):
+    print("YES")
+else:
+    print("NO")
