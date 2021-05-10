@@ -1,0 +1,12 @@
+n=int(input())
+s1=input()
+s2=input()
+c=0
+for i in range(n):
+    x=abs(int(s1[i])-int(s2[i]))
+    y=abs(10-x)
+    if(x<y):
+        c=c+x
+    else:
+        c=c+y
+print(c)
