@@ -1,0 +1,14 @@
+n=int(input())
+s=1
+x=2
+u=1
+c=0
+while(u<=n):
+    s=s+x
+    x=x+1
+    u=u+s
+    c=c+1
+if(u==1):
+    print(1)
+else:
+    print(c)
