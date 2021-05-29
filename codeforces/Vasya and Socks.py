@@ -1,0 +1,10 @@
+n,m=map(int,input().split())
+c=1
+while(1):
+    n=n-1
+    if(c%m==0):
+        n=n+1
+    if(n==0):
+        break
+    c=c+1
+print(c)
