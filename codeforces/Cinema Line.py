@@ -1,0 +1,35 @@
+n=int(input())
+l=list(map(int,input().split()))
+e=1
+d=25
+
+a25=0
+a50=0
+a100=0
+for i in range(n):
+    if(l[i]==25):
+        a25=a25+1
+    elif(l[i]==50):
+        if(a25<=0):
+            e=0
+            break
+        a25=a25-1
+        a50=a50+1
+    else:
+        if(a25<=0):
+            e=0
+            break
+        if(a50<=0):
+            if(a25<3):
+                e=0
+                break
+            a25=a25-3
+            a100=a100+1
+        else:
+            a50=a50-1
+            a25=a25-1
+            a100=a100+1
+if(e==1):
+    print("YES")
+else:
+    print("NO")
