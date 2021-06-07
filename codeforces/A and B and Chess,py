@@ -1,0 +1,32 @@
+dif=0
+l=[]
+for _ in range(8):
+    S=input()
+    for j in range(8):
+        if(S[j]=='q'):
+            dif-=9
+        if(S[j]=='r'):
+            dif-=5
+        if(S[j]=='b'):
+            dif-=3
+        if(S[j]=='n'):
+            dif-=3
+        if(S[j]=='p'):
+            dif-=1
+        if(S[j]=='Q'):
+            dif+=9
+        if(S[j]=='R'):
+            dif+=5
+        if(S[j]=='B'):
+            dif+=3
+        if(S[j]=='N'):
+            dif+=3
+        if(S[j]=='P'):
+            dif+=1
+if(dif>0):
+    print("White")
+elif(dif<0):
+    print("Black")
+else:
+    print("Draw")
+    
