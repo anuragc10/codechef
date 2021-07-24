@@ -1,0 +1,22 @@
+t=int(input())
+for _ in range(t):
+    a1,b1,c1=(map(int,input().split()))
+    a2,b2,c2=(map(int,input().split()))
+    d1=0
+    d2=0
+    if(a2<a1):
+        d1=d1+1
+    else:
+        d2=d2+1
+    if(b2<b1):
+        d1=d1+1
+    else:
+        d2=d2+1
+    if(c2<c1):
+        d1=d1+1
+    else:
+        d2=d2+1
+    if(d1>d2):
+        print("A")
+    else:
+        print("B")
